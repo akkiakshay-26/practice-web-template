@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Verdana, sans-serif;
+}
+.title-bar{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 35px;
+    background-color: white;
+}
+.left-bar{
+    display: flex;
+    gap: 10px;
+}
+.left-bar h1{
+    font-size: 20px;
+}
+.left-bar h2{
+    font-size: 20px;
+    color: grey;
+}
+.right-bar{
+    display: flex;
+    gap: 30px;
+}
+.right-bar a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.building-picture{
+    background-image:url("building.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.building-picture h1{
+    font-size: 40px;
+    color: white;
+}
+.building-picture h2{
+    font-size: 40px;
+    color: white;
+}
+.br{
+    background-color: rgba(36, 34, 34, 0.603);
+    padding: 5px 7px;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 30px;
+    gap: 60px;
+}
+.projects p{
+    font-size: 25px;
+}
+.projects-pictures{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+.pp{
+    background-image: url("house.jpg");
+    background-repeat: no-repeat ;
+    width: 100%;
+    height: 250px;
+    /* size ela padithe ala peetukovala */
+    background-size: cover;
+}
+.pp p{
+    background-color: black;
+    padding: 5px 4px;
+    font-size: 20px;
+    color: white;
+    width: 50%;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0px 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.about h1{
+    font-size: 25px;
+}
+.about-pictures{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.ap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ap img{
+    width: 100%;
+    height: 100%;
+}
+.ap h4{
+    color: rgba(36, 34, 34, 0.603);
+}
+
+.ap button{
+    padding: 10px;
+    font-size:15px;
+    border: none;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.contact input{
+    padding: 15px;
+    font-size: 20px;
+}
+.cp{
+    font-size: 20px;
+}
+.contact button{
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border:none;
+}
+.footer{
+    padding: 30px;
+}
+.footer img{
+    width: 100%;
+}
+
+
+
+
+/* resposiveness css code  */
+@media(max-width:768px){
+    .title-bar{
+        position:fixed;
+        width: 100%;
+    }
+    .right-bar{
+        display: none;
+    }
+    .building-picture{
+        height: 300px;
+        display: flex;
+        align-items: center;
+    }
+    .building-picture h2{
+        display: none;
+    }
+    .projects-pictures{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about-pictures{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
